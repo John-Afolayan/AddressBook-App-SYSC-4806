@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Address Book Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Congrats, your buddy was added!</h1>
+    <p th:text="'Name: ' + ${buddyinfo.name}" />
+    <p th:text="'Phone Number: ' + ${buddyinfo.phoneNum}" />
+    <p th:text="'Address: ' + ${buddyinfo.phoneNum}" />
+    <a href="/buddyinfo">Add another buddy</a>
+</body>
+</html>
